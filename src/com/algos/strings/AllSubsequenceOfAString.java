@@ -10,7 +10,7 @@ public class AllSubsequenceOfAString {
 	static List<String> list = new ArrayList<String>();
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		getAllSubsequence("abcd","");
+		getAllSubsequence("abc","");
 		System.out.println(list);
 	}
 	

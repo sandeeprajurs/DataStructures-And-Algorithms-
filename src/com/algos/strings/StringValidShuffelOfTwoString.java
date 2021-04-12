@@ -4,8 +4,6 @@ public class StringValidShuffelOfTwoString {
 	//https://www.programiz.com/java-programming/examples/check-valid-shuffle-of-strings
 	public static void main(String[] args) {
 		System.out.println(shiffelCheck("XY", "12", "X12Y"));
-		char a =97;
-		System.out.println(a);
 	}
 	
 	//O(n) Time | O(1) Space

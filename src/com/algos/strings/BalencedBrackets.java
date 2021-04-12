@@ -17,22 +17,22 @@ public class BalencedBrackets {
 	static boolean isbalanced(String x)
     {
         // add your code here
-        Map<Character, Character> chars = new HashMap<Character, Character>();
-        chars.put(')', '(');
-        chars.put('}', '{');
-        chars.put(']', '[');
+		Map<Character, Character> braces = new HashMap<Character, Character>();
+        braces.put(')', '(');
+        braces.put('}', '{');
+        braces.put(']', '[');
         List<Character> list = new ArrayList<Character>();
         for(int i=0; i<x.length(); i++){
-            if(x.charAt(i) == '{' || x.charAt(i) == '(' || x.charAt(i) == '[')
-                list.add(x.charAt(i));
-            else if(list.size() > 0 && chars.containsKey(x.charAt(i))){
-                if(list.get(list.size() - 1) == chars.get(x.charAt(i)))
-                    list.remove(list.size() - 1);
+            char ch = x.charAt(i);
+            if(ch == '(' || ch == '{' || ch == '['){
+                list.add(ch);
+            }
+            else if(ch == ')' || ch == '}' || ch == ']'){
+                if(list.size() > 0 && list.get(list.size()-1) == braces.get(ch))
+                    list.remove(list.size()-1);
                 else
                     return false;
             }
-            else
-                return false;
         }
         return list.size() == 0;
     }
