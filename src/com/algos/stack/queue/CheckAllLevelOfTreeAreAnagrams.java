@@ -12,7 +12,7 @@ public class CheckAllLevelOfTreeAreAnagrams {
 		root1.right = new Node(2);
 		root1.right.left = new Node(5);
 		root1.right.right = new Node(4);
-//		root1.right.right.left = new Node(6);
+		root1.right.right.left = new Node(6);
 		root1.right.right.right = new Node(7);
 
 		Node root2 = new Node(1);
@@ -21,7 +21,7 @@ public class CheckAllLevelOfTreeAreAnagrams {
 		root2.left.left = new Node(4);
 		root2.left.right = new Node(5);
 		
-//		root2.left.left.left = new Node(7);
+		root2.left.left.left = new Node(7);
 		root2.left.left.right = new Node(6);
 
 		System.out.println(areAnagrams(root1, root2) ? "Yes" : "No");
@@ -86,4 +86,5 @@ public class CheckAllLevelOfTreeAreAnagrams {
 			return false;
 		return true;
 	}
+
 }

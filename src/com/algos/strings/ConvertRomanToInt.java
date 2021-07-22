@@ -7,7 +7,7 @@ public class ConvertRomanToInt {
 	//https://www.youtube.com/watch?v=9rfe5nXL05Q&ab_channel=TerribleWhiteboard
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(romanToInt("IV"));
+		System.out.println(romanToInt("IVX"));
 	}
 	
 	 //O(N) ST
@@ -42,5 +42,4 @@ public class ConvertRomanToInt {
         }
         return total;
     }
-
 }

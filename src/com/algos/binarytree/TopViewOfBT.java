@@ -13,7 +13,28 @@ public class TopViewOfBT {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Node n1 = new Node(10);
+		Node n2 = new Node(20);
+		Node n3 = new Node(40);
+		Node n4 = new Node(60);
+		Node n5 = new Node(30);
+		Node n6 = new Node(90);
+		Node n7 = new Node(100);
+		Node n8 = new Node(101);
+		Node n9 = new Node(102);
+		Node n10 = new Node(103);
+		
+		n1.left = n2;
+		n2.left = n3;
+		n2.right = n4;
+		
+		n1.right = n5;
+		n5.left = n6;
+		n5.right = n7;
+		n7.left = n8;
+		n8.right = n9;
+		n9.right = n10;
+		System.out.println(topView(n1));
 	}
 	
 	static class Node {

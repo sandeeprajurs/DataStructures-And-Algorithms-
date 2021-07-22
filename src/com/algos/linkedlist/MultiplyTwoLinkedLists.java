@@ -13,7 +13,7 @@ public class MultiplyTwoLinkedLists {
         //add code here.
         Node n1 = l1;
         Node n2 = l2;
-       StringBuilder str1 = new StringBuilder();
+        StringBuilder str1 = new StringBuilder();
         StringBuilder str2 = new StringBuilder();
         while(n1!=null){
             str1.append(String.valueOf(n1.data));

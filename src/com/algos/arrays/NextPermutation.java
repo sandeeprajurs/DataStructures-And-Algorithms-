@@ -7,7 +7,7 @@ public class NextPermutation {
 	//O(n) Time | O(1) Space
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr = {1,2,3};
+		int[] arr = {5,4,8,10,7,6,4,3,1};
 		nextPermutation(arr);
 		System.out.println(Arrays.toString(arr));
 	}

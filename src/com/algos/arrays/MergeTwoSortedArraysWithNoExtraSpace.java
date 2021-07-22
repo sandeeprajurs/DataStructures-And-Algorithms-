@@ -27,6 +27,7 @@ public class MergeTwoSortedArraysWithNoExtraSpace {
 		}
 		Arrays.sort(arr1);
 		Arrays.sort(arr2);
+		System.out.println(Arrays.toString(arr1));
 	}
 	
 	public static void swap(int i, int j, int[] arr1, int[] arr2) {

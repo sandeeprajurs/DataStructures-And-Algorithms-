@@ -5,7 +5,7 @@ public class DeleteNodeWhichHaveGreaterValueInRight {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		StringBuilder br = new StringBuilder();
+		
 	}
 	
 	//O(n) Time | O(1) Space

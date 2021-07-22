@@ -7,7 +7,7 @@ import java.util.Stack;
 public class CheckIfOtherArrayIsStackPermutation {
 	
 	public static void main(String[] args) {
-		System.out.println(checkStackPermutation(new int[] {1,2,3}, new int[] {1, 2, 3}));
+		System.out.println(checkStackPermutation(new int[] {1,2,3}, new int[] {2, 1, 3}));
 	}
 	
 	static boolean checkStackPermutation(int ip[], int op[]) {

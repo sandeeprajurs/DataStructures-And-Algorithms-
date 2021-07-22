@@ -23,11 +23,9 @@ public class RemoveLoopFromLinkedList {
         }
         
         fast = head;
-        Node fastprev = null;
         while(slow != fast){
             slowprev = slow;
             slow = slow.next;
-            fastprev = fast;
             fast = fast.next;
         }
         

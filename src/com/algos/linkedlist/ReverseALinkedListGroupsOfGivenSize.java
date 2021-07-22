@@ -38,6 +38,7 @@ public class ReverseALinkedListGroupsOfGivenSize {
 			curr.next = prev;
 			prev = curr;
 			curr = temp;
+			count++;
 		}
 		
 		if(curr!=null) {
