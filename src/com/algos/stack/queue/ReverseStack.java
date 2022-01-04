@@ -3,7 +3,7 @@ package com.algos.stack.queue;
 import java.util.Stack;
 
 public class ReverseStack {
-	//O(N) Time | O(1) Space
+	//O(N^2) Time | O(1) Space
 	//https://www.geeksforgeeks.org/reverse-a-stack-using-recursion/
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -24,7 +24,7 @@ public class ReverseStack {
 			return;
 		}
 		int x = stack.pop();
-		insertAtBottom(stack, x);
+		insertAtBottom(stack, num);
 		stack.push(x);
 	}
 }

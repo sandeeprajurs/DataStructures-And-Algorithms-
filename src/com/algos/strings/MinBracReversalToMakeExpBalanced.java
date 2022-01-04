@@ -5,7 +5,7 @@ import java.util.Stack;
 public class MinBracReversalToMakeExpBalanced {
 	//https://practice.geeksforgeeks.org/problems/count-the-reversals/0
 	public static void main(String[] args) {
-		System.out.println(getMinReverseCount("}{{}}{{{"));
+		System.out.println(getMinReverseCount("{}}{}{"));
 	}
 	
 	//O(n) ST

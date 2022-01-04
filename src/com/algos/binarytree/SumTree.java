@@ -6,7 +6,7 @@ package com.algos.binarytree;
 public class SumTree {
 	
 	public static void main(String[] args) {
-		Node node = new Node(70);
+		Node node = new Node(10);
 		node.left = new Node(20);
 		node.left.left = new Node(10);
 		node.left.right = new Node(10);

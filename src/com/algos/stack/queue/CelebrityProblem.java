@@ -12,7 +12,7 @@ public class CelebrityProblem {
 		M[1] = new int[] { 0, 0, 0 };
 		M[2] = new int[] { 0, 1, 0 };
 
-		celebrity(M, 3);
+		System.out.println(celebrity(M, 3));
 	}
 
 	static int celebrity(int M[][], int n) {
@@ -46,10 +46,14 @@ public class CelebrityProblem {
 			if (i == potential) {
 				continue;
 			}
-			if (M[i][potential] != 1 || M[potential][i] == 1) {
+			if (M[i][potential] != 1) {
 				return -1;
 			}
 
+		}
+		for(int i=0; i<M[0].length; i++) {
+			if(M[potential][i] != 0)
+				return -1;
 		}
 		return potential;
 	}

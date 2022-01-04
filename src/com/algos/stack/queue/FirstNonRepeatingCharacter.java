@@ -9,7 +9,7 @@ public class FirstNonRepeatingCharacter {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(FirstNonRepeating("ftvbwnimpvvbfvtot"));
+		System.out.println(FirstNonRepeating("aabc"));
 	}
 	
 	 public static String FirstNonRepeating(String A) {

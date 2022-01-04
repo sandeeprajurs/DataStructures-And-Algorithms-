@@ -6,7 +6,8 @@ public class ConstructTreeFromInoOrderAndPreOrder {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Node node = buildTree(new int[] {1, 6, 8, 7}, new int[] {1, 6, 7, 8}, 4);
+		System.out.println(node);
 	}
 
 	static class Node {

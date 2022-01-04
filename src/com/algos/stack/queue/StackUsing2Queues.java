@@ -34,6 +34,6 @@ public class StackUsing2Queues {
     {
         if(q1.size() > 0)
 	        return q1.poll();
-	       return -1;
+	    return -1;
     }
 }

@@ -75,6 +75,9 @@ public class KruskalMinSpanningTree {
 
 	public static void KruskalMST() {
 		Arrays.sort(edges, (e1, e2) -> e1.weight - e2.weight);
+		for(int i=0; i<edges.length; i++) {
+			System.out.println(edges[i].src.data+"-------"+edges[i].dest.data+" :----"+edges[i].weight);
+		}
 		for (int i = 0; i < edges.length; i++) {
 			union(i);
 		}
@@ -104,8 +107,8 @@ public class KruskalMinSpanningTree {
 		makeSet(7);
 		makeSet(8);
 		Edge edge1 = new Edge(map.get(7), map.get(6), 1);
-		Edge edge2 = new Edge(map.get(8), map.get(2), 2);
-		Edge edge3 = new Edge(map.get(6), map.get(5), 2);
+		Edge edge2 = new Edge(map.get(3), map.get(5), 14);
+		Edge edge3 = new Edge(map.get(1), map.get(7), 11);
 		Edge edge4 = new Edge(map.get(0), map.get(1), 4);
 		Edge edge5 = new Edge(map.get(2), map.get(5), 4);
 		Edge edge6 = new Edge(map.get(8), map.get(6), 6);
@@ -115,8 +118,8 @@ public class KruskalMinSpanningTree {
 		Edge edge10 = new Edge(map.get(1), map.get(2), 8);
 		Edge edge11 = new Edge(map.get(3), map.get(4), 9);
 		Edge edge12 = new Edge(map.get(5), map.get(4), 10);
-		Edge edge13 = new Edge(map.get(1), map.get(7), 11);
-		Edge edge14 = new Edge(map.get(3), map.get(5), 14);
+		Edge edge13 = new Edge(map.get(6), map.get(5), 2);
+		Edge edge14 = new Edge(map.get(8), map.get(2), 2);
 		edges = new Edge[] {edge1, edge2, edge3, edge4, edge5, edge6, edge7, edge8, edge9, edge10, edge11, edge12, edge13, edge14};
 		KruskalMST();
 		System.out.println("Edges");

@@ -19,7 +19,7 @@ public class RottenOranges {
 	
 	public static void main(String[] args) {
 		RottenOranges ro = new RottenOranges();
-		int[][] grid =  {{1},{1}, {1}, {1}};
+		int[][] grid =  {{0, 1, 2},{0, 1, 2}, {2, 1, 1}};
 		System.out.println(ro.rottenOranges(grid));
 	}
 

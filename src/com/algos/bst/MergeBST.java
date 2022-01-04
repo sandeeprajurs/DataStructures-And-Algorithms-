@@ -52,7 +52,6 @@ public class MergeBST {
 		List<Integer> list2 = new ArrayList<Integer>();
 		inOrder(root1, list1);
 		inOrder(root2, list2);
-
 		List<Integer> list = merge(list1, list2);
 		constructBST(list, Integer.MIN_VALUE, Integer.MAX_VALUE, new TreeInfo(0));
 		//inorder traversal of merged trees
