@@ -2,7 +2,9 @@
 public class Test4 {
 	
 	public static void main(String[] args) {
-		System.out.println(hasSingleCycle(new int[] {1, -1, 1, -1}));
+//		System.out.println(hasSingleCycle(new int[] {1, -1, 1, -1}));
+		String a = "-";
+		System.out.println(a.charAt(0) - 'A');
 	}
 
 	public static boolean hasSingleCycle(int[] array) {
